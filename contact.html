@@ -1,35 +1,37 @@
-<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Sign Up</title>
 
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Contact Us</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
-    <header>
-      <nav>
-        <img src="images/logo/logo-nb.png" alt="logo" class="logo">
-        <ul>
-          <li><a class="mini-sess" href="themed.html">Seasonal Themed Shoots</a></li>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="portolio.html">Portfolio</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-
-    <form action="/" method="post">
-      <input type="text" name="firstName" placeholder="Your First Name...">
-      <input type="text" name="lastName" placeholder="Your Last Name...">
-      <input type="text" name="Which kind of photoshoot are you interested in?" placeholder="Shoot Type...">
-      <button type="submit" name="Submit">Submit</button>
-    </form>
+        <!-- Custom styles for this template -->
+        <link href="styles.css" rel="stylesheet">
+    </head>
     
-    <script src="" async defer></script>
-  </body>
+    <body>
+        <form class = "signup-form" method="post" action="/">
+            <img class="" src="images/logo-nb.png" alt="" width="250" height="250">
+            <h1 class="">Contact us for more details and pricing!</h1>
+            <div class = "data-input">
+
+                <div class="top-box">
+                    <label for="fname">First name</label>
+                    <input type="text" class="top-input" name="fname" placeholder="First Name..." required autofocus>
+                </div>
+
+                <div class="mid-box">
+                    <label for="lname">Last name</label>
+                    <input type="text" name="lname" placeholder="Last Name..." required>
+                </div>
+
+                <div class="bot-box">
+                    <label for="floatingInput">Email address</label>
+                    <input type="email" name="email" placeholder="name@example.com" required>
+                </div>
+                <button class="submit-btn" type="submit">Sign up</button>
+            </div>
+
+            <p class="copyright">© InDetail Photography 2022–2023</p>
+            
+        </form>
+    </body>
 </html>

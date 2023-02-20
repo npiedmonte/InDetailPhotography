@@ -1,37 +1,64 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>Sign Up</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact Us</title>
 
         <!-- Custom styles for this template -->
-        <link href="contact.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <script src="index.js"></script>
     </head>
     
     <body>
-        <form class = "signup-form" method="post" action="/">
-            <img class="" src="images/logo/logo-nb.png" alt="" width="250" height="250">
-            <h1 class="">Contact us for more details and pricing!</h1>
-            <div class = "data-input">
+        <div class="wrapper">
 
-                <div class="top-box">
-                    <label for="fname">First name</label>
-                    <input type="text" class="top-input" name="fname" placeholder="First Name..." required autofocus>
+            <header>
+                <nav>
+                  <img src="images/logo/logo-nb.png" alt="logo" class="logo">
+                  <ul>
+                    <li><a class="mini-sess" href="themed.html">Seasonal Themed Shoots</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="portolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                  </ul>
+                </nav>
+            </header>
+
+            <form class = "signup-form" method="post" action="/">
+                <img src="images/logo/logo-nb.png" alt="" width="250" height="250">
+                <h2>Contact us for details and pricing!</h2>
+                <div class = "data-input">
+
+                    <div class="top-box">
+                        <label for="fname">First name</label>
+                        <input type="text" class="top-input" name="fname" placeholder="First Name..." required autofocus>
+                    </div>
+
+                    <div class="mid-box">
+                        <label for="lname">Last name</label>
+                        <input type="text" name="lname" placeholder="Last Name..." required>
+                    </div>
+
+                    <div class="bot-box">
+                        <label for="floatingInput">Email</label>
+                        <input type="email" name="email" placeholder="name@example.com" required>
+                    </div>
+                    <button class="submit-btn" type="submit">Submit</button>
                 </div>
+                
+            </form>
 
-                <div class="mid-box">
-                    <label for="lname">Last name</label>
-                    <input type="text" name="lname" placeholder="Last Name..." required>
+                <!-- Footer -->
+
+            <footer class="social-section" id="footer">
+                <div class="social-links">
+                <!-- <i class="social-icon fab fa-facebook-f"></i> -->
+                <a href="https://www.instagram.com/_indetailphotography/"><img class="social-logo" src="images/icons/instagram_logo.png" alt="instagram-logo"></a>
+                <a href="contact.html"><img class="social-logo" src="images/icons/envelope-logo.jpg" alt="email-logo"></a>
+                <p>© Copyright 2022 InDetail Photography</p>
                 </div>
-
-                <div class="bot-box">
-                    <label for="floatingInput">Email address</label>
-                    <input type="email" name="email" placeholder="name@example.com" required>
-                </div>
-                <button class="submit-btn" type="submit">Submit</button>
-            </div>
-
-            <p class="copyright">© InDetail Photography 2022–2023</p>
-            
-        </form>
+            </footer>
+        </div>
     </body>
 </html>

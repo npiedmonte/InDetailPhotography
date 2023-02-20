@@ -321,7 +321,7 @@ nav ul li a:hover{
 
 .social-logo{
 	margin: 0 1%;
-	height: 5%;
+	height: auto;
 	width: 5%;
 }
 
@@ -378,40 +378,67 @@ nav ul li a:hover{
 
 /* Contact Styling */
 
-/* Style inputs with type="text", select elements and textareas */
-input[type=text], select, textarea {
-	width: 100%; /* Full width */
-	padding: 12px; /* Some padding */ 
-	border: 1px solid #ccc; /* Gray border */
-	border-radius: 4px; /* Rounded borders */
-	box-sizing: border-box; /* Make sure that padding and width stays in place */
-	margin-top: 6px; /* Add a top margin */
-	margin-bottom: 16px; /* Bottom margin */
-	resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-  }
-  
-  /* Style the submit button with a specific background color etc */
-  input[type=submit] {
-	background-color: #04AA6D;
-	color: white;
-	padding: 12px 20px;
-	border: none;
-	border-radius: 4px;
-	cursor: pointer;
-  }
-  
-  /* When moving the mouse over the submit button, add a darker green color */
-  input[type=submit]:hover {
-	background-color: #45a049;
-  }
-  
-  /* Add a background color and some padding around the form */
-  .container {
-	border-radius: 5px;
-	background-color: #f2f2f2;
-	padding: 20px;
-  }
+.signup-form {
+	background-color: rgb(31, 0, 66);
+	padding: 5% 0 5% 0;
+}
 
+.signup-form img {
+	height: 20%;
+	width: auto;
+}
+
+.signup-form h2 {
+	font-size: 1.6rem;
+	padding: 5% 10%;
+}
+
+label {
+    display: inline-block;
+	font-size: 1rem;
+    width: 100px;
+    text-align: right;
+	margin: 1% 0 0 0;
+  }
+  
+  input {
+    padding: 4% 4%;
+  }
+  
+  .signup-form {
+    text-align: center;
+    font-weight: bold;
+    color:#BFA2DB;
+  }
+  
+  .data-input {
+    font-size: 1.1rem;
+  }
+  
+  .top-box {
+    border-radius: 2px;
+    margin-bottom: 2%;
+  }
+  
+  .mid-box {
+    border-radius: 0;
+    margin-bottom: 2%;
+  }
+  
+  .bot-box {
+    border-radius: 2px;
+    margin-bottom: 4%;
+  }
+  
+  .submit-btn {
+    background-color: #BFA2DB;
+    height: 7%;
+    width: 20%;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 0 auto 3% auto;
+    font-weight: bold;
+  }
 
 /*----------------------------------------------------------------------------------------*/
 
@@ -626,6 +653,74 @@ input[type=text], select, textarea {
 		padding-right: 1%;
 		font-size: 2rem;
 	}
+
+	/* Contact Styling */
+
+	.signup-form {
+		background-color: rgb(31, 0, 66);
+		padding: 5% 0 5% 0;
+	}
+
+	.signup-form img {
+		height: 40%;
+		width: auto;
+	}
+
+	.signup-form h2 {
+		font-size: 2.3rem;
+		padding: 2% 10%;
+	}
+
+	label {
+		display: inline-block;
+		font-size: 1.5rem;
+		width: 20%;
+		text-align: right;
+		margin: 1% 2% 0 0;
+	}
+  
+	input {
+		padding: 2% 2%;
+	}
+	
+	.signup-form {
+		text-align: center;
+		font-weight: bold;
+		color:#BFA2DB;
+	}
+	
+	.data-input {
+		font-size: 1.5rem;
+	}
+	
+	.top-box {
+		border-radius: 2px;
+		margin-bottom: 1%;
+		padding-right: 18%;
+	}
+	
+	.mid-box {
+		border-radius: 0;
+		margin-bottom: 1%;
+		padding-right: 18%;
+	}
+	
+	.bot-box {
+		border-radius: 2px;
+		margin-bottom: 2%;
+		padding-right: 18%;
+	}
+	
+	.submit-btn {
+		background-color: #BFA2DB;
+		height: 7%;
+		width: 18%;
+		border-radius: 5px;
+		display: inline-block;
+		margin: 0 auto 1% auto;
+		font-weight: bold;
+		font-size: 1.5rem;
+  }
 }
 
 

@@ -12,7 +12,7 @@
 
 :root{
 
-	--header-height: 6rem;
+	--header-height: 4rem;
 	--mobile-menu-width: 4rem;
 
 	--grey-dark:#555;
@@ -24,7 +24,6 @@
 	--pink: #EBC7E6;
 }
 
-
 /* -------------------------------------------------------------------------- */
 
 /* tag styling */
@@ -32,7 +31,7 @@
 body {
 	font-family: sans-serif;
 	font-size: 1.6rem;
-	line-height: 1.4;
+	line-height: 1.2;
 	padding-top:var(--header-height);
 }
 
@@ -41,6 +40,8 @@ h1 {
 	text-align: center;
 	padding: 1% 0;
 }
+
+/* Navbar Section */
 
 header{
 	background-color: var(--grey-dark);
@@ -54,7 +55,7 @@ nav{
 	display:flex;
   	justify-content: space-between;
 	gap:4rem;
-	height: 8rem;
+	height: 4rem;
   	padding-right: 2%;
 }
 
@@ -67,7 +68,7 @@ nav ul{
 nav h3 a,
 nav ul li a{
 	display:block;
-	line-height:8rem;
+	line-height:6rem;
 	text-decoration:none;
 	color: var(--tan);
 }
@@ -79,7 +80,6 @@ nav ul li a:hover{
 	color: var(--purple-light-1);
 }
 
-/* Navbar Section */
 .navbar {
 	display: flex;
 	align-items: center;
@@ -94,6 +94,7 @@ nav ul li a:hover{
 
 .logo{
   border: 2%;
+  padding: 1% 0;
 }
 
 .nav-links a {
@@ -111,7 +112,7 @@ nav ul li a:hover{
 #mobile-menu{
 	position:absolute;
 	top:50%;
-	right:2rem;
+	right:1rem;
 	transform:translateY(-50%);
 	z-index:1;
 	width:var(--mobile-menu-width);
@@ -121,7 +122,7 @@ nav ul li a:hover{
 
 #mobile-menu span{
 	position:absolute;
-	width:80%;
+	width:70%;
 	height:1px;
 	left:10%;
 	top:50%;
@@ -195,104 +196,120 @@ nav ul li a:hover{
 	display:block;
 }
 
-/** - Tablet Landscape und Large UI Scales */
+/** - Responsive design parameters */
 
-@media (max-width:1024px){
+@media (max-width:850px){
 	header nav ul{
 		display:none;
 	}
 }
 
+.wrapper {
+	width: 100%;
+}
+
 /* -------------------------------------------------------------------------- */
 
-/* Index styling */
+/* Mobile/Small Settings */
 
 /* Heading Section */
-.head-section{
-	margin-top: 1%;
-	margin-bottom: 0;
+
+.head-section {
+	height: 250px;
 }
 
-.head-txt-top{
-	margin: 5% 10% 0 5%;
-	font-size: 36pt;
+.head-txt-top {
 	position: absolute;
-	text-align: center;
-	z-index: 5;
-	color: black;
+	margin: 2% 10% 0 5%;
+	font-size: 1rem;
+	padding: 3px;
 	background: rgba(255, 255, 255, 0.5);
 }
 
-.head-txt-bot{
-	margin: 65% 0 0 60%;
-	font-size: 36pt;
-	position: absolute;
-	text-align: center;
-	z-index: 5;
-	color: black;
-	background: rgba(255, 255, 255, 0.5);
+.head-img {
+	width: 100%;
+	height: 100%;
 }
 
-.head-img{
-  /* left: 50%; */
-	position: relative;
-	width:100%;
-	z-index: 1;
-	rotate: 90;
+.head-txt-bot {
+	position: absolute;
+	margin: 55% 0 0 60%;
+	font-size: 1rem;
+	padding: 3px;
+	background: rgba(255, 255, 255, 0.5);
 }
 
 /* Photoshoot Types Section */
+.shoot-section h2 {
+	font-size: 1rem;
+}
+
 .shoot-type {
-	padding-top: 20px;
+	padding-top: 5%;
 	text-align: center;
 }
 
 .shoot-desc{
 	padding: 3%;
-	font-size: 3rem;
+	font-size: 0.75rem;
 }
 
 .odd-shoot{
 	background-color: var(--purple-dark-1);
-	height: 500px;
+	height: 200px;
 	clear: right;
 }
 
 .odd-shoot img{
 	float: left;
-	height: 500px;
 	padding-right: 2%;
+	width: auto;
+	height: 100%;
+	object-fit: cover;
 }
 
 .even-shoot{
 	background-color: var(--purple-light-1);
-	height: 500px;
+	height: 200px;
 	clear: left;
 	padding-left: 1%;
 }
 
 .even-shoot img{
 	float: right;
-	height: 500px;
 	padding-left: 2%;
+	width: auto;
+	height: 100%;
+	object-fit: cover;
 }
 
 /* Seasonal Offers Section */
 
-.seasonal-offers {
+/* .seasonal-offers {
 	text-align: center;
-}
+} */
 
-.seasonal-offers img {
+/* .seasonal-offers img {
 	height: 20%;
 	width: 20%;
-}
+} */
 
 /* Scheduling Section */
 
 .schedule-section {
 	height: 100px;
 	text-align: center;
+	background-color: var(--purple-dark-1);
+}
+
+.schedule-section h2 {
+	font-size: 1.6rem;
+	text-align: center;
+	background-color: var(--purple-light-1);
+	padding: 10px;
+	display: inline;
+	position:relative;
+	top: 30%;
 }
 
 /* Footer */
@@ -304,35 +321,59 @@ nav ul li a:hover{
 
 .social-logo{
 	margin: 0 1%;
-	height: 3%;
-	width: 3%;
+	height: 5%;
+	width: 5%;
 }
 
 .social-links {
   	text-align: center;
 }
 
+.social-section p {
+	font-size: 0.75rem;
+}
 
 /* About Styling */
 
 .profile-overview {
 	text-align: center;
-	padding: 5% 15%;
+	padding: 5% 18%;
 	background-color: var(--purple-dark-1);
+}
+
+.profile-overview h1 {
+	font-size: 1.2rem;
+	padding: 0 0 1% 0;
+}
+
+.about-cont {
+	font-size: 0.9rem;
+	padding-bottom: 1%;
 }
 
 .prof-cont {
   	padding: 0 0 3% 2%;
 	background-color: var(--purple-light-1);
+	height: 200px;
 }
 
-.profile-img {
+.prof-name {
+	text-align: center;
+	padding: 2% 0 2% 25%;
+	font-size: 1.2rem;
+}
+
+.prof-img {
 	float: left;
-	padding-right: 1%;
+	padding-right: 3%;
+	height: auto;
+	width: 40%;
+	object-fit: cover;
 }
 
-.profile-desc {
+.profile-desc p{
   	padding-right: 1%;
+	font-size: 0.75rem;
 }
 
 /* Contact Styling */
@@ -371,22 +412,227 @@ input[type=text], select, textarea {
 	padding: 20px;
   }
 
-/* dark color #363d65 */
-/* light color #9094c3 */
-/* pink color #C8B6E2 */
-/* teal color #B1E1FF */
 
-/* #495C83*/
-/* #7A86B6*/
-/* #A8A4CE */
-/* #C8B6E2 */
+/*----------------------------------------------------------------------------------------*/
 
-/* Alt palette */
-/* #FBFACD */
-/* #DEBACE */
-/* #BA94D1 */
-/* #7F669D */
+/* Desktop/Large Display Settings */
 
+@media only screen and (min-width: 850px){
+
+	/* Navbar Section */
+
+	header{
+		background-color: var(--grey-dark);
+		position:absolute;
+		z-index:10;
+		width:100%;
+		top:0;
+	}
+
+	.logo{
+		border: 2%;
+		padding: 1% 0;
+	  }
+
+	nav{
+		display:flex;
+		justify-content: space-between;
+		gap:4rem;
+		height: 6rem;
+		padding-right: 2%;
+	}
+
+	nav ul{
+		display:flex;
+		gap:2rem;
+		list-style:none;
+	}
+
+	nav h3 a,
+	nav ul li a{
+		display:block;
+		line-height:6rem;
+		text-decoration:none;
+		color: var(--tan);
+	}
+
+	nav ul li a:hover{
+		display:block;
+		line-height:6rem;
+		text-decoration:none;
+		color: var(--purple-light-1);
+	}
+
+	.navbar {
+		display: flex;
+		align-items: center;
+		text-align: center;
+		justify-content: space-between;
+		padding: 20px;
+		background-color: var(--grey-dark);
+		color: var(--tan);
+		list-style: none;
+		text-decoration: none;
+	}
+
+	.nav-links a {
+	color: var(--eggshell-light);
+	font-size: 25px;
+	padding: 16px;
+	}
+
+	.nav-links a:hover {
+	color: var(--purple-light-1);
+	}
+
+	/* Index styling */
+
+	.head-section{
+		display: inline;
+	}
+
+	.head-txt-top{
+		margin: 5% 10% 0 5%;
+		font-size: 2.5rem;
+		position: absolute;
+		text-align: center;
+		z-index: 5;
+		color: black;
+		background: rgba(255, 255, 255, 0.5);
+	}
+
+	.head-txt-bot{
+		margin: 60% 0 0 70%;
+		font-size: 2.5rem;
+		position: absolute;
+		text-align: center;
+		z-index: 5;
+		color: black;
+		background: rgba(255, 255, 255, 0.5);
+	}
+
+	.head-img{
+		position: relative;
+		width:100%;
+		height: auto;
+		z-index: 1;
+	}
+
+	/* Photoshoot Types Section */
+	.shoot-type {
+		padding-top: 20px;
+		text-align: center;
+	}
+
+	.shoot-section h2 {
+		font-size: 2.5rem;
+	}
+
+	.shoot-desc{
+		padding: 3%;
+		font-size: 2rem;
+	}
+
+	.odd-shoot{
+		background-color: var(--purple-dark-1);
+		height: 500px;
+		clear: right;
+	}
+
+	.odd-shoot img{
+		float: left;
+		padding-right: 2%;
+		width: auto;
+		height: 100%;
+		object-fit: cover;
+	}
+
+	.even-shoot{
+		background-color: var(--purple-light-1);
+		height: 500px;
+		clear: left;
+		padding-left: 1%;
+	}
+
+	.even-shoot img{
+		float: right;
+		width: auto;
+		height: 100%;
+		object-fit: cover;
+		padding-left: 2%;
+	}
+
+	.social-section p {
+		font-size: 1.2rem;
+	}
+
+	/* About Styling */
+
+	.prof-cont {
+		padding: 0 0 3% 2%;
+		background-color: var(--purple-light-1);
+		font-size: 0.75rem;
+		height: 300px;
+	}
+
+	.prof-name {
+		text-align: center;
+		padding: 2% 0 2% 25%;
+		font-size: 2rem;
+	}
+
+	.prof-img {
+		float: left;
+		padding-right: 3%;
+		width: auto;
+		height: 70%;
+		object-fit: cover;
+	}
+
+	.profile-desc {
+		padding-right: 1%;
+		font-size: 1.5rem;
+	}
+
+	.profile-overview {
+		text-align: center;
+		padding: 5% 18%;
+		background-color: var(--purple-dark-1);
+	}
+
+	.profile-overview h1 {
+		font-size: 3rem;
+		padding: 0 0 1% 0;
+	}
+
+	.about-cont {
+		font-size: 2rem;
+		padding-bottom: 1%;
+	}
+
+	.prof-cont {
+		padding: 0 0 3% 2%;
+		background-color: var(--purple-light-1);
+		height: 300px;
+	}
+
+	.prof-name h2 {
+		text-align: center;
+		padding: 2% 0 2% 25%;
+		font-size: 0.5rem;
+	}
+
+	.profile-desc p{
+		padding-right: 1%;
+		font-size: 2rem;
+	}
+}
+
+
+/* #645CBB dark purple*/ 
+/* #A084DC light purple*/
+/* #BFACE2 lightest purple*/
+/* #EBC7E6 pink*/
 
 /* Alt palette */
 /* #F3F0D7 */
@@ -394,11 +640,3 @@ input[type=text], select, textarea {
 /* #F0D9FF */
 /* #BFA2DB */
 /* #7F7C82 */
-
-/* #645CBB dark purple*/ 
-/* #A084DC light purple*/
-/* #BFACE2 lightest purple*/
-/* #EBC7E6 pink*/
-
-	/* --purple-light-1: #BA94D1;
-  	--purple-dark-1: #363d65; */

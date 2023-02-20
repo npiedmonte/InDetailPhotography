@@ -1,0 +1,53 @@
+
+/* Contact Form Styling */
+body {
+  background-color: rgb(31, 0, 66);
+}
+
+label {
+  display: inline-block;
+  width: 150px;
+  text-align: right;
+  padding: 0 10px 0 0;
+}
+
+input {
+  padding: 10px 20px;
+  margin: 0 8% 0 auto;
+}
+
+.signup-form {
+  text-align: center;
+  font-weight: bold;
+  color:#BFA2DB;
+}
+
+.data-input {
+  margin: 0 auto 0 auto;
+  font-size: 1.4em;
+}
+
+.top-box {
+  border-radius: 2px;
+  margin-bottom: 10px;
+}
+
+.mid-box {
+  border-radius: 0;
+  margin-bottom: 10px;
+}
+
+.bot-box {
+  border-radius: 2px;
+  margin-bottom: 10px;
+}
+
+.submit-btn {
+  background-color: #BFA2DB;
+  height: 7%;
+  width: 12%;
+  border-radius: 5px;
+  display: inline-block;
+  margin: 0 auto 0 auto;
+  font-weight: bold;
+}

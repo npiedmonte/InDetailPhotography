@@ -440,6 +440,16 @@ label {
     font-weight: bold;
   }
 
+    /* Portfolio Styling */
+
+	.port-all-gall{
+		text-align: center;
+	  }
+	
+	  .port-sect {
+		padding: 2%;
+	  }
+
 /*----------------------------------------------------------------------------------------*/
 
 /* Desktop/Large Display Settings */

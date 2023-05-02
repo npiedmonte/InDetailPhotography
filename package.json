@@ -1,0 +1,19 @@
+{
+  "name": "indetail_flexgrid",
+  "version": "1.0.0",
+  "description": "Ground up development of InDetail Photography Website",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/npiedmonte/InDetailFlexGrid.git"
+  },
+  "author": "Nick Piedmonte",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/npiedmonte/InDetailFlexGrid/issues"
+  },
+  "homepage": "https://github.com/npiedmonte/InDetailFlexGrid#readme"
+}

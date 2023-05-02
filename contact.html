@@ -1,0 +1,76 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact Us</title>
+
+        <!-- Custom styles for this template -->
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    </head>
+    
+    <body>
+        <nav>
+            <ul class="menu">
+              <div>
+                <img class="logo" src="./images/logo/logo-nb.png" alt="indetail-logo">
+              </div>
+              <li class="item"><a href="./index.html">Home</a></li>
+              <li class="item"><a href="./about.html">About</a></li>
+              <li class="item"><a href="./contact.html">Contact</a></li>
+              <li class="item has-submenu">
+                <a tabindex="0">Gallery<i class="sub-drop fa fa-sort-down"></i></a>
+                <ul class="submenu">
+                  <li class="subitem"><a href="./gallery.html">Family</a></li>
+                  <li class="subitem"><a href="./gallery.html">Maternity</a></li>
+                  <li class="subitem"><a href="./gallery.html">Newborn</a></li>
+                  <li class="subitem"><a href="./gallery.html">Personal</a></li>
+                  <li class="subitem"><a href="./gallery.html">Themed Mini-sessions</a></li>
+                  <li class="subitem"><a href="./gallery.html">Boudoir</a></li>
+                </ul>
+              </li>
+              <li class="toggle"><a href="#"><i class="fa fa-bars"></i></a></li>
+            </ul>
+          </nav>
+
+            <form class = "signup-form" method="post" action="/">
+                <img src="images/logo/logo-nb.png" alt="" width="250" height="250">
+                <h2>Contact us for details and pricing!</h2>
+                <div class = "data-input">
+
+                    <div class="top-box">
+                        <label for="fname">First name</label>
+                        <input type="text" class="top-input" name="fname" placeholder="First Name..." required autofocus>
+                    </div>
+
+                    <div class="mid-box">
+                        <label for="lname">Last name</label>
+                        <input type="text" name="lname" placeholder="Last Name..." required>
+                    </div>
+
+                    <div class="bot-box">
+                        <label for="floatingInput">Email</label>
+                        <input type="email" name="email" placeholder="name@example.com" required>
+                    </div>
+                    <button class="submit-btn" type="submit">Submit</button>
+                </div>
+                
+            </form>
+
+      <!-- Footer -->
+
+      <footer class="social-section" id="footer">
+        <div class="social-links">
+          <!-- <i class="social-icon fab fa-facebook-f"></i> -->
+          <a href="https://www.instagram.com/_indetailphotography/"><img class = "social-logo" src="images/icons/Instagram_logo.png" alt="instagram-logo"></a>
+          <a href="contact.html"><img class="env-icon" src="images/icons/envelope.png" alt="contact-link"></a>
+          <p class="lt-txt">© Copyright 2023 InDetail Photography</p>
+        </div>
+      </footer>
+
+            <script src="app.js"></script>
+    </body>
+</html>

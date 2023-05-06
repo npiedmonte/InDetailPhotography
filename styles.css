@@ -213,10 +213,10 @@ a {
 
 .shoot-button p {
   position: absolute;
-  left: 25%;
+  left: 15%;
   top: 40%;
   font-size: 2em;
-  font-weight: 800;
+  font-weight: 600;
   z-index: 3;
 }
 
@@ -229,6 +229,10 @@ a {
 .mini img {
   width: 100%;
   padding: 3%;
+}
+
+.testimonials {
+  text-align: center;
 }
 
 /* Footer */
